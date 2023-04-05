@@ -1339,7 +1339,7 @@ contract ExchangepROOK is Ownable, Pausable {
 	/// @notice Exchange Rate
 	uint256 public exchangeRate;
 
-	/// @notice emitted when exchange ROOK to pROOK and USDC
+	/// @notice emitted when exchange pROOK to USDC
 	event Exchange(address indexed user, uint256 amount, uint256 value);
 
 	//
@@ -1364,7 +1364,7 @@ contract ExchangepROOK is Ownable, Pausable {
 	}
 
 	/**
-	 * @notice Exchange Rate value with 4 decimals, example 455000 = $45.50
+	 * @notice Exchange rate value with 4 decimals, example 455000 = $45.50
 	 * @param _exchangeRate to use
 	 */
 	function setExchangeRate(uint256 _exchangeRate) external onlyOwner {

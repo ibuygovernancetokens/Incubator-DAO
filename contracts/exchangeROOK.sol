@@ -1369,7 +1369,7 @@ contract ExchangeROOK is Ownable, Pausable {
 	}
 
 	/**
-	 * @notice Exchange Rate value with 4 decimals, example 455000 = $45.50
+	 * @notice Exchange rate value with 4 decimals, example 455000 = $45.50
 	 * @param _exchangeRate to use
 	 */
 	function setExchangeRate(uint256 _exchangeRate) external onlyOwner {
